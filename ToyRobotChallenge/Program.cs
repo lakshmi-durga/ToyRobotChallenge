@@ -25,41 +25,44 @@ namespace ToyRobotChallenge
             ToyRobot toyRobot = new ToyRobot();
             String input = Console.ReadLine();
             bool firstinput = true;
+            List<String> command;
             while(input.ToUpper() != "EXIT")
             {
                 if (firstinput)
                 {
-                    if (validateFirstInput(input))
+                    if (validateFirstInput(input, out command))
                     {
                         firstinput = false;
-                        toyRobot.Command(input);
+                        toyRobot.Command(command);
 
                     }
                 }
                 else
                 {
-                    if (validateInput(input))
+                    if (validateInput(input, out command))
                     {
-                        toyRobot.Command(input);
+                        toyRobot.Command(command);
                     }
                 }
                 input = Console.ReadLine();
             }
         }
 
-        internal static bool validateInput(String input)
+        internal static bool validateInput(String input, out List<String> command)
         {
             bool result = true;
+            command = new List<string>();
+            char[] delimiterChars = { ' ','\t' };
             int x, y;
             String[] inputs = input.Split(",");
             if (inputs.Length == 3)
             {
-                List<String> placecommad = inputs[0].Split(" ").ToList();
-                placecommad.Add(inputs[1]);
-                placecommad.Add(inputs[2]);
-                if (placecommad[0].Trim().ToUpper() == "PLACE")
+                command = inputs[0].Split(delimiterChars).ToList();
+                command.Add(inputs[1]);
+                command.Add(inputs[2]);
+                if (command[0].Trim().ToUpper() == "PLACE")
                 {
-                    if (int.TryParse(placecommad[1], out x) && int.TryParse(placecommad[2], out y))
+                    if (int.TryParse(command[1], out x) && int.TryParse(command[2], out y))
                     {
                         if ((x > 5 || x < 0) || (y < 0 || y > 5))
                         {
@@ -79,8 +82,8 @@ namespace ToyRobotChallenge
                     Console.WriteLine("Command should be PLACE X,Y,F");
                     result = false;
                 }
-                if (placecommad[3].Trim().ToUpper() != "NORTH" && placecommad[3].Trim().ToUpper() != "SOUTH"
-                    && placecommad[3].Trim().ToUpper() != "EAST" && placecommad[3].Trim().ToUpper() != "WEST")
+                if (command[3].Trim().ToUpper() != "NORTH" && command[3].Trim().ToUpper() != "SOUTH"
+                    && command[3].Trim().ToUpper() != "EAST" && command[3].Trim().ToUpper() != "WEST")
                 {
                     result = false;
                     Console.WriteLine("Robot should face North, South, East or West");
@@ -94,16 +97,21 @@ namespace ToyRobotChallenge
                     Console.WriteLine("Command should be Left, Right, Move or Report");
                     result = false;
                 }
+                else
+                {
+                    command.Add(inputs[0]);
+                }
             }
             return result;
         }
 
-        internal static bool validateFirstInput(String input)
+        internal static bool validateFirstInput(String input, out List<String> command)
         {
             String[] inputs = input.Split(",");
+            command = new List<string>();
             if(inputs.Length == 3)
             {
-                return validateInput(input);
+                return validateInput(input, out command);
             }
             else
             {

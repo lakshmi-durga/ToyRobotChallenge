@@ -32,20 +32,14 @@ namespace ToyRobotChallenge
             };     
         }
         
-        internal void Command(String input)
-        {
-            String[] inputs = input.Split(",");
-            List<String> command;
-            if (inputs.Length == 3)
+        internal void Command(List<String> command)
+        {     
+            if (command.Count == 4)
             {
-                command = inputs[0].Split(" ").ToList();
-                command.Add(inputs[1]);
-                command.Add(inputs[2]);
                 Place(command);
             }
             else
             {
-                command = inputs.ToList();
                 switch (command[0].ToUpper())
                 {
                     case "LEFT":
@@ -66,8 +60,8 @@ namespace ToyRobotChallenge
 
         internal void Place(List<String> command)
         {
-            positionX = Convert.ToInt32(command[1]);
-            positionY = Convert.ToInt32(command[2]);
+            positionX = Convert.ToInt32(command[1].Trim());
+            positionY = Convert.ToInt32(command[2].Trim());
             direction = command[3].Trim().ToUpper();
         }
 
