@@ -54,7 +54,7 @@ namespace ToyRobotChallenge
             command = new List<string>();
             char[] delimiterChars = { ' ','\t' };
             int x, y;
-            String[] inputs = input.Split(",");
+            String[] inputs = input.Trim().Split(",");
             if (inputs.Length == 3)
             {
                 command = inputs[0].Split(delimiterChars).ToList();
