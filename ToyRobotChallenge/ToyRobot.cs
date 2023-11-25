@@ -40,7 +40,7 @@ namespace ToyRobotChallenge
             }
             else
             {
-                switch (command[0].ToUpper())
+                switch (command[0].Trim().ToUpper())
                 {
                     case "LEFT":
                         Left();
