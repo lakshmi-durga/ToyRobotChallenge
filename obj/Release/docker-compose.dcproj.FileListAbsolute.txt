@@ -1,0 +1,8 @@
+C:\Users\lk185090\source\repos\ToyRobotChallenge\bin\Release\ToyRobotChallenge.deps.json
+C:\Users\lk185090\source\repos\ToyRobotChallenge\bin\Release\ToyRobotChallenge.runtimeconfig.json
+C:\Users\lk185090\source\repos\ToyRobotChallenge\bin\Release\ToyRobotChallenge.exe
+C:\Users\lk185090\source\repos\ToyRobotChallenge\bin\Release\ToyRobotChallenge.dll
+C:\Users\lk185090\source\repos\ToyRobotChallenge\bin\Release\ToyRobotChallenge.pdb
+C:\Users\lk185090\source\repos\ToyRobotChallenge\obj\Release\docker-compose.dcproj.AssemblyReference.cache
+C:\Users\lk185090\source\repos\ToyRobotChallenge\obj\Release\docker-compose.dcproj.CoreCompileInputs.cache
+C:\Users\lk185090\source\repos\ToyRobotChallenge\obj\Release\docker-compose.dcproj.CopyComplete

@@ -1,0 +1,12 @@
+name: dockercompose6192834274408571847
+services:
+  toyrobotchallenge:
+    build:
+      context: C:\Users\lk185090\source\repos\ToyRobotChallenge
+      dockerfile: ToyRobotChallenge\Dockerfile
+    image: toyrobotchallenge
+    networks:
+      default: null
+networks:
+  default:
+    name: dockercompose6192834274408571847_default

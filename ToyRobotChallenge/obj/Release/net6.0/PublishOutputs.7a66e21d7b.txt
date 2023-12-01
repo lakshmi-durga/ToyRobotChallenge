@@ -1,0 +1,5 @@
+C:\Users\lk185090\source\repos\ToyRobotChallenge\ToyRobotChallenge\obj\Docker\publish\ToyRobotChallenge.exe
+C:\Users\lk185090\source\repos\ToyRobotChallenge\ToyRobotChallenge\obj\Docker\publish\ToyRobotChallenge.dll
+C:\Users\lk185090\source\repos\ToyRobotChallenge\ToyRobotChallenge\obj\Docker\publish\ToyRobotChallenge.deps.json
+C:\Users\lk185090\source\repos\ToyRobotChallenge\ToyRobotChallenge\obj\Docker\publish\ToyRobotChallenge.runtimeconfig.json
+C:\Users\lk185090\source\repos\ToyRobotChallenge\ToyRobotChallenge\obj\Docker\publish\ToyRobotChallenge.pdb
