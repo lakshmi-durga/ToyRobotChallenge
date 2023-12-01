@@ -8,8 +8,8 @@ WORKDIR /app
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["ToyRobotChallenge/ToyRobotChallenge.csproj", "ToyRobotChallenge/"]
-RUN dotnet restore "ToyRobotChallenge/ToyRobotChallenge.csproj"
+COPY ["ToyRobotChallenge.csproj", "ToyRobotChallenge/"]
+RUN dotnet restore "ToyRobotChallenge.csproj"
 COPY . .
 WORKDIR "/src/ToyRobotChallenge"
 RUN dotnet build "ToyRobotChallenge.csproj" -c Release -o /app/build
