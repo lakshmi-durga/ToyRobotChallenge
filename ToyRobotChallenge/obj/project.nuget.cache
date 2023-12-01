@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "f3NKYIZgBZPZQlDX1mgKqJJW/reSOUO7r0Jbvat/WWYsGzsriadMHfVu0gQ9f4uWoyfAQbXSlAoMgNGw7A9r1Q==",
+  "dgSpecHash": "ChmJMRgTFcswKWEkCPMmuaWBhSHF0ifV56jTTvluGTTh+92xBlGMXATXMTHzqFcGNQ5OOE0N4rVxPcVox1RPIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\lk185090\\source\\repos\\ToyRobotChallenge\\ToyRobotChallenge\\ToyRobotChallenge.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lk185090\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\lk185090\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\lk185090\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
     "C:\\Users\\lk185090\\.nuget\\packages\\system.collections.nongeneric\\4.3.0\\system.collections.nongeneric.4.3.0.nupkg.sha512",
     "C:\\Users\\lk185090\\.nuget\\packages\\system.diagnostics.debug\\4.3.0\\system.diagnostics.debug.4.3.0.nupkg.sha512",
     "C:\\Users\\lk185090\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",

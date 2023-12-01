@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  toyrobotchallenge:
+    image: ${DOCKER_REGISTRY-}toyrobotchallenge
+    build:
+      context: .
+      dockerfile: ToyRobotChallenge\Dockerfile
